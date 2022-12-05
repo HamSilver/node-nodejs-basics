@@ -7,7 +7,7 @@ const list = async () => {
   try {
     const files = await readdir(folder);
     files.forEach((file) => console.log(file));
-  } catch (e) {
+  } catch (_) {
     throw new Error(errorMsg);
   }
 };
